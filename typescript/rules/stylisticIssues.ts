@@ -46,12 +46,6 @@ export const stylisticIssues: StylisticIssues = {
    * https://eslint.org/docs/rules/capitalized-comments
    */
   "capitalized-comments": "off",
-  
-  /**
-   * Prevent multiline comments not being blocked together
-   * https://eslint.org/docs/rules/multiline-comment-style
-   */
-  "multiline-comment-style": "off",
 
   /**
    * require trailing commas in multiline object literals 🔧
@@ -283,7 +277,7 @@ export const stylisticIssues: StylisticIssues = {
    * enforce a particular style for multiline comments 🔧
    * https://eslint.org/docs/rules/multiline-comment-style
    */
-  "multiline-comment-style": "error",
+  "multiline-comment-style": "off",
 
   /**
    * require multiline ternary 🔧
