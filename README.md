@@ -2,7 +2,13 @@
 
 ## What?
 
-About 10 years ago, AirBnB's engineers said "Everyone writes JavaScript a little differently. We finally decided it was time that we got together and agree on how we write JavaScript." SPS Commerce engineers have felt the same way for almost as long, but at this point we write Typescript instead of Javascript and we decided to focus on taking what we feel are the best parts of the AirBnB guide and make it our own.
+About 10 years ago, AirBnB's engineers created a style guide and explained their reasoning in this way: "Everyone writes JavaScript a little differently. We finally decided it was time that we got together and agree on how we write JavaScript." SPS Commerce engineers have talked about the need for unified lint rules and a style guide for almost as long, but in 2022 we all new development is done in Typescript instead of Javascript. In this guide we've taken what we feel are the best parts of the AirBnB guide and made it our own.
+
+It is broken down in to 3 sections:
+
+- [Typescript](./typescript/)
+- [React](./react/)
+- [CSS in JS](./css-in-js/)
 
 ## Why?
 
