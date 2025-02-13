@@ -32,7 +32,7 @@
   "homepage": "https://github.com/SPSCommerce/typescript",
   "devDependencies": {
     "@types/eslint": "^7.28.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.1",
     "typescript": "^5.3.3"
   }
 }
