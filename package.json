@@ -33,6 +33,6 @@
   "devDependencies": {
     "@types/eslint": "^7.28.0",
     "eslint": "^8.57.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.7.3"
   }
 }
