@@ -45,6 +45,4 @@ const config: Linter.Config = {
   },
 };
 
-typescript.rules
-
 export = config;
