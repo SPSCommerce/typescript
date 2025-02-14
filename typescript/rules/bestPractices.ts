@@ -463,7 +463,7 @@ export const bestPractices: BestPractices = {
   /**
    * restrict what can be thrown as an exception
    * https://eslint.org/docs/rules/no-throw-literal
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
+   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/only-throw-error.mdx
    */
   "no-throw-literal": "off",
   "@typescript-eslint/only-throw-error": "error",

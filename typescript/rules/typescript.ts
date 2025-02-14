@@ -83,7 +83,7 @@ export const typescript: Linter.RulesRecord = {
 
   /**
    * Require a specific member delimiter style for interfaces and type literals 🔧
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-delimiter-style.md
+   * https://eslint.style/rules/default/member-delimiter-style#ts-member-delimiter-style
    */
   "@stylistic/member-delimiter-style": "error",
 
@@ -482,7 +482,7 @@ export const typescript: Linter.RulesRecord = {
 
   /**
    * Require consistent spacing around type annotations 🔧
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/type-annotation-spacing.md
+   * https://eslint.style/rules/default/type-annotation-spacing#ts-type-annotation-spacing
    */
   "@stylistic/type-annotation-spacing": "error",
 
