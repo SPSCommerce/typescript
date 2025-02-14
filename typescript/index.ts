@@ -15,7 +15,7 @@ const config: Linter.Config = {
     project: "./tsconfig.json",
   },
   plugins: [
-    "@typescript-eslint", "import",
+    "@typescript-eslint", "import", "@stylistic"
   ],
   settings: {
     "import/extensions": [".ts", ".tsx"],
@@ -44,5 +44,7 @@ const config: Linter.Config = {
     ...typescript,
   },
 };
+
+typescript.rules
 
 export = config;

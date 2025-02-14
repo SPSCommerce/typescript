@@ -125,10 +125,8 @@ export const possibleErrors: PossibleErrors = {
   /**
    * disallow unnecessary semicolons ✅ 🔧
    * https://eslint.org/docs/rules/no-extra-semi
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
    */
-  "no-extra-semi": "off",
-  "@typescript-eslint/no-extra-semi": "error",
+  "no-extra-semi": "error",
 
   /**
    * disallow overwriting functions written as function declarations ✅
