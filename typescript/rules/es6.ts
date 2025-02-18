@@ -34,6 +34,12 @@ export const es6: ECMAScript6 = {
   "generator-star-spacing": ["error", { before: false, after: true }],
 
   /**
+   * enforce logical assignment operators
+   * https://eslint.org/docs/rules/logical-assignment-operators
+   */
+  "logical-assignment-operators": "error",
+
+  /**
    * disallow modifying variables of class declarations ✅
    * https://eslint.org/docs/rules/no-class-assign
    */
@@ -67,7 +73,6 @@ export const es6: ECMAScript6 = {
    */
   "no-duplicate-import": "off",
   "no-duplicate-imports": "off",
-  "@typescript-eslint/no-duplicate-imports": "off",
 
   /**
    * disallow symbol constructor ✅
@@ -159,6 +164,12 @@ export const es6: ECMAScript6 = {
     {
       enforceForRenamedProperties: false,
     }],
+
+  /**
+   * prefer exponentiation operator
+   * https://eslint.org/docs/rules/prefer-exponentiation-operator
+   */
+  "prefer-exponentiation-operator": "error",
 
   /**
    * disallow parseInt() in favor of binary, octal, and hexadecimal literals 🔧

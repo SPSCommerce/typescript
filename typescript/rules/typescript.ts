@@ -33,14 +33,6 @@ export const typescript: Linter.RulesRecord = {
   "@typescript-eslint/ban-tslint-comment": "off",
 
   /**
-   * Bans specific types from being used ✅ 🔧
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-types.md
-   * The default config you get if you enable this recommended rule without specifying your own
-   * should be reviewed.
-   */
-  "@typescript-eslint/ban-types": "error",
-
-  /**
    * Ensures that literals on classes are exposed in a consistent style 🔧
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/class-literal-property-style.md
    */
@@ -91,9 +83,9 @@ export const typescript: Linter.RulesRecord = {
 
   /**
    * Require a specific member delimiter style for interfaces and type literals 🔧
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-delimiter-style.md
+   * https://eslint.style/rules/default/member-delimiter-style#ts-member-delimiter-style
    */
-  "@typescript-eslint/member-delimiter-style": "error",
+  "@stylistic/member-delimiter-style": "error",
 
   /**
    * Require a consistent member declaration order
@@ -145,6 +137,12 @@ export const typescript: Linter.RulesRecord = {
   "@typescript-eslint/no-empty-interface": "error",
 
   /**
+   * Disallow usage of the `object` type with an object literal
+   * as a type annotation ✅
+   */
+  "@typescript-eslint/no-empty-object-type": "error",
+
+  /**
    * Disallow usage of the `any` type ✅ 🔧
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-explicit-any.md
    */
@@ -173,12 +171,6 @@ export const typescript: Linter.RulesRecord = {
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-for-in-array.md
    */
   "@typescript-eslint/no-for-in-array": "error",
-
-  /**
-   * Disallow usage of the implicit `any` type in catch clauses 🔧
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md
-   */
-  "@typescript-eslint/no-implicit-any-catch": "warn",
 
   /**
    * Disallows explicit type declarations for variables or
@@ -234,12 +226,6 @@ export const typescript: Linter.RulesRecord = {
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
    */
   "@typescript-eslint/no-non-null-assertion": "error",
-
-  /**
-   * Disallow the use of parameter properties in class constructors
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-parameter-properties.md
-   */
-  "@typescript-eslint/no-parameter-properties": "off",
 
   /**
    * Disallows invocation of `require()`
@@ -315,6 +301,11 @@ export const typescript: Linter.RulesRecord = {
 
   /**
    * Disallows member access on `any` typed variables ✅ 💭
+   */
+  "@typescript-eslint/no-unsafe-function-type": "error",
+
+  /**
+   * Disallows member access on `any` typed variables ✅ 💭
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-member-access.md
    */
   "@typescript-eslint/no-unsafe-member-access": "error",
@@ -330,6 +321,11 @@ export const typescript: Linter.RulesRecord = {
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-var-requires.md
    */
   "@typescript-eslint/no-var-requires": "error",
+
+  /**
+   * Disallow using confusing built-in primitive class wrappers.
+   */
+  "@typescript-eslint/no-wrapper-object-types": "error",
 
   /**
    * Prefers a non-null assertion over explicit type cast when possible 🔧 💭
@@ -467,12 +463,6 @@ export const typescript: Linter.RulesRecord = {
   "@typescript-eslint/restrict-template-expressions": "error",
 
   /**
-   * Enforces that members of a type union/intersection are sorted alphabetically 🔧
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md
-   */
-  "@typescript-eslint/sort-type-union-intersection-members": "error",
-
-  /**
    * Restricts the types allowed in boolean expressions 🔧 💭
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
    */
@@ -492,9 +482,9 @@ export const typescript: Linter.RulesRecord = {
 
   /**
    * Require consistent spacing around type annotations 🔧
-   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/type-annotation-spacing.md
+   * https://eslint.style/rules/default/type-annotation-spacing#ts-type-annotation-spacing
    */
-  "@typescript-eslint/type-annotation-spacing": "error",
+  "@stylistic/type-annotation-spacing": "error",
 
   /**
    * Requires type annotations to exist

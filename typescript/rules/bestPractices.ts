@@ -86,7 +86,7 @@ export const bestPractices: BestPractices = {
    * require the use of === and !== 🔧
    * https://eslint.org/docs/rules/eqeqeq
    */
-  eqeqeq: "error",
+  eqeqeq: ["error", "always", { null: "ignore" }],
 
   /**
    * Require grouped accessor pairs in object literals and classes
@@ -234,6 +234,12 @@ export const bestPractices: BestPractices = {
    */
   "no-implied-eval": "off",
   "@typescript-eslint/no-implied-eval": "error",
+
+  /**
+   * disallow assignment to imported bindings
+   * https://eslint.org/docs/rules/no-import-assign
+   */
+  "no-import-assign": "error",
 
   /**
    * disallow this keywords outside of classes or class-like objects
@@ -457,10 +463,10 @@ export const bestPractices: BestPractices = {
   /**
    * restrict what can be thrown as an exception
    * https://eslint.org/docs/rules/no-throw-literal
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
+   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/only-throw-error.mdx
    */
   "no-throw-literal": "off",
-  "@typescript-eslint/no-throw-literal": "error",
+  "@typescript-eslint/only-throw-error": "error",
 
   /**
    * disallow unmodified conditions of loops
@@ -481,6 +487,12 @@ export const bestPractices: BestPractices = {
    * https://eslint.org/docs/rules/no-unused-labels
    */
   "no-unused-labels": "error",
+
+  /**
+   * disallow useless backreferences in regular expressions
+   * https://eslint.org/docs/rules/no-useless-backreference
+   */
+  "no-useless-backreference": "error",
 
   /**
    * disallow unnecessary .call() and .apply()
@@ -530,6 +542,12 @@ export const bestPractices: BestPractices = {
    * https://eslint.org/docs/rules/no-with
    */
   "no-with": "error",
+
+  /**
+   * require `Object.hasOwn` instead of `Object.prototype.hasOwnProperty.call`
+   * https://eslint.org/docs/rules/prefer-object-has-own
+   */
+  "prefer-object-has-own": "error",
 
   /**
    * require using Error objects as Promise rejection reasons

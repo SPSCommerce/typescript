@@ -1,6 +1,6 @@
 {
   "name": "@spscommerce/typescript",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "SPS official style guides and lint configs for frontend development, forked from airbnb/javascript",
   "private": true,
   "scripts": {
@@ -32,7 +32,7 @@
   "homepage": "https://github.com/SPSCommerce/typescript",
   "devDependencies": {
     "@types/eslint": "^7.28.0",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3"
+    "eslint": "^8.57.1",
+    "typescript": "^5.7.3"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@spscommerce/eslint-config-typescript",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "SPS official linter configuration for TypeScript.",
   "main": "lib/index.js",
   "scripts": {
@@ -31,18 +31,19 @@
   },
   "homepage": "https://github.com/SPSCommerce/typescript/tree/main/typescript#readme",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.20.0",
+    "@stylistic/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
     "eslint": "^8.56.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1"
-  },
-  "dependencies": {
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.20.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "~2.29.1"
+    "@stylistic/eslint-plugin": "^3.1.0",
+    "@types/eslint": "^8.56.10",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0"
   }
 }

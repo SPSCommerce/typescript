@@ -1,8 +1,9 @@
 // eslint-disable-next-line import/no-unresolved
-import type { StylisticIssues } from "eslint/rules/stylistic-issues";
+import type { Linter } from "eslint";
 
 // ✅ = recommended, 🔧 = fixable
-export const stylisticIssues: StylisticIssues = {
+export const stylisticIssues: Linter.RulesRecord = {
+
   /**
    * enforce line breaks after opening and before closing array brackets 🔧
    * https://eslint.org/docs/rules/array-bracket-newline
@@ -29,11 +30,9 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * enforce one true brace style 🔧
-   * https://eslint.org/docs/rules/brace-style
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
+   * https://eslint.style/rules/ts/brace-style#ts-brace-style
    */
-  "brace-style": "off",
-  "@typescript-eslint/brace-style": "error",
+  "@stylistic/brace-style": "error",
 
   /**
    * require camel case names
@@ -49,19 +48,15 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * require trailing commas in multiline object literals 🔧
-   * https://eslint.org/docs/rules/comma-dangle
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-dangle.md
+   * https://eslint.style/rules/ts/comma-dangle#ts-comma-dangle
    */
-  "comma-dangle": "off",
-  "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
+  "@stylistic/comma-dangle": ["error", "always-multiline"],
 
   /**
    * enforce spacing before/after comma 🔧
-   * https://eslint.org/docs/rules/comma-spacing
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
+   * https://eslint.style/rules/ts/comma-spacing#ts-comma-spacing
    */
-  "comma-spacing": "off",
-  "@typescript-eslint/comma-spacing": "error",
+  "@stylistic/comma-spacing": "error",
 
   /**
    * enforce one true comma style 🔧
@@ -90,11 +85,9 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * enforce spacing between functions and their invocations 🔧
-   * https://eslint.org/docs/rules/func-call-spacing
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
+   * https://eslint.style/packages/eslint-plugin-ts/rules/func-call-spacing/README#ts-func-call-spacing
    */
-  "func-call-spacing": "off",
-  "@typescript-eslint/func-call-spacing": "error",
+  "@stylistic/function-call-spacing": "error",
 
   /**
    * requires function names to match the name of the
@@ -161,14 +154,6 @@ export const stylisticIssues: StylisticIssues = {
   "implicit-arrow-linebreak": "off",
 
   /**
-   * this option sets a specific tab width for your code 🔧
-   * https://eslint.org/docs/rules/indent
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
-   */
-  indent: "off",
-  "@typescript-eslint/indent": ["error", 2],
-
-  /**
    * specify whether double or single quotes should be used in JSX attributes 🔧
    * https://eslint.org/docs/rules/jsx-quotes
    */
@@ -182,11 +167,9 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * require a space before & after certain keywords 🔧
-   * https://eslint.org/docs/rules/keyword-spacing
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
+   * https://eslint.style/rules/ts/keyword-spacing#ts-keyword-spacing
    */
-  "keyword-spacing": "off",
-  "@typescript-eslint/keyword-spacing": "error",
+  "@stylistic/keyword-spacing": "error",
 
   /**
    * enforce position of line comments
@@ -208,11 +191,9 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * require or disallow an empty line between class members 🔧
-   * https://eslint.org/docs/rules/lines-between-class-members
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
+   * https://eslint.style/rules/ts/lines-between-class-members#ts-lines-between-class-members
    */
-  "lines-between-class-members": "off",
-  "@typescript-eslint/lines-between-class-members": "error",
+  "@stylistic/lines-between-class-members": "error",
 
   /**
    * specify the maximum depth that blocks can be nested
@@ -457,11 +438,9 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * require padding inside curly braces 🔧
-   * https://eslint.org/docs/rules/object-curly-spacing
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/object-curly-spacing.md
+   * https://eslint.style/rules/ts/object-curly-spacing#ts-object-curly-spacing
    */
-  "object-curly-spacing": "off",
-  "@typescript-eslint/object-curly-spacing": ["error", "always"],
+  "@stylistic/object-curly-spacing": ["error", "always"],
 
   /**
    * enforce "same line" or "multiple line" on object properties. 🔧
@@ -541,21 +520,17 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * specify whether double or single quotes should be used 🔧
-   * https://eslint.org/docs/rules/quotes
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
+   * https://eslint.style/rules/ts/quotes#ts-quotes
    */
-  quotes: "off",
-  "@typescript-eslint/quotes": ["error",
+  "@stylistic/quotes": ["error",
     "double",
     { avoidEscape: true }],
 
   /**
    * require or disallow use of semicolons instead of ASI 🔧
-   * https://eslint.org/docs/rules/
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
+   * https://eslint.style/rules/ts/semi#ts-semi
    */
-  semi: "off",
-  "@typescript-eslint/semi": "error",
+  "@stylistic/semi": "error",
 
   /**
    * enforce spacing before and after semicolons 🔧
@@ -589,11 +564,9 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * require or disallow space before function opening parenthesis 🔧
-   * https://eslint.org/docs/rules/space-before-function-paren
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-function-paren.md
+   * https://eslint.style/rules/ts/space-before-function-paren#ts-space-before-function-paren
    */
-  "space-before-function-paren": "off",
-  "@typescript-eslint/space-before-function-paren": [
+  "@stylistic/space-before-function-paren": [
     "error",
     {
       anonymous: "always",
@@ -610,11 +583,9 @@ export const stylisticIssues: StylisticIssues = {
 
   /**
    * require spaces around operators 🔧
-   * https://eslint.org/docs/rules/space-infix-ops
-   * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-infix-ops.md
+   * https://eslint.style/rules/ts/space-infix-ops#ts-space-infix-ops
    */
-  "space-infix-ops": "off",
-  "@typescript-eslint/space-infix-ops": "error",
+  "@stylistic/space-infix-ops": "error",
 
   /**
    * Require or disallow spaces before/after unary operators 🔧
