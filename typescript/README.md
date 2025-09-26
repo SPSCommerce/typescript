@@ -1590,8 +1590,6 @@ foo.init();
 
 <img src="../prettier.svg" height="18" align="center"/> **Enforced by Prettier**
 
-<img src="../eslint.svg" height="18" align="center"/> [`object-curly-newline`](https://eslint.org/docs/rules/object-curly-newline)
-
 > Why? The curly braces follow the same indentation rules as every other curly brace block in the style guide, as do the trailing commas.
 
 ```typescript
@@ -1608,6 +1606,8 @@ import {
   longNameE,
 } from 'path';
 ```
+
+Note: formerly we used [`object-curly-newline`](https://eslint.org/docs/rules/object-curly-newline) but have turned it off due to conflicts with how Prettier handles this.
 
 ---
 
