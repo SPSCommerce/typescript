@@ -1,5 +1,7 @@
 # SPSCommerce/typescript
 
+## MOVED TO [SPS-JS-SHARED](https://github.com/SPSCommerce/sps-js-shared)
+
 ## What?
 
 About 10 years ago, AirBnB's engineers created a style guide and explained their reasoning in this way: "Everyone writes JavaScript a little differently. We finally decided it was time that we got together and agree on how we write JavaScript." SPS Commerce engineers have talked about the need for unified lint rules and a style guide for almost as long, but in 2024 we all new development is done in Typescript instead of Javascript. In this guide we've taken what we feel are the best parts of the AirBnB guide and made it our own.
