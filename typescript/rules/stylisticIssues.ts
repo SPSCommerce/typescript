@@ -427,14 +427,7 @@ export const stylisticIssues: Linter.RulesRecord = {
    * enforce line breaks between braces 🔧
    * https://eslint.org/docs/rules/object-curly-newline
    */
-  "object-curly-newline": [
-    "error",
-    {
-      minProperties: 4,
-      multiline: true,
-      consistent: true,
-    },
-  ],
+  "object-curly-newline": "off",
 
   /**
    * require padding inside curly braces 🔧
